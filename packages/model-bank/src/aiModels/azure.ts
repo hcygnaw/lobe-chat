@@ -9,6 +9,112 @@ const azureChatModels: AIChatModelCard[] = [
       vision: true,
     },
     config: {
+      deploymentName: 'gpt-5.2',
+    },
+    contextWindowTokens: 400_000,
+    description:
+      'GPT-5.2 is a GA model with advanced reasoning capabilities. It supports text and image processing, structured outputs, and parallel tool calls. Training data up to August 2025.',
+    displayName: 'GPT-5.2',
+    enabled: true,
+    id: 'gpt-5.2',
+    maxOutput: 128_000,
+    pricing: {
+      units: [
+        { name: 'textInput', rate: 1.25, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 10, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput_cacheRead', rate: 0.13, strategy: 'fixed', unit: 'millionTokens' },
+      ],
+    },
+    releasedAt: '2025-12-11',
+    type: 'chat',
+  },
+  {
+    abilities: {
+      functionCall: true,
+      reasoning: true,
+      structuredOutput: true,
+      vision: true,
+    },
+    config: {
+      deploymentName: 'gpt-5.2-chat',
+    },
+    contextWindowTokens: 128_000,
+    description:
+      'GPT-5.2 Chat is a preview model optimized for conversational scenarios. It supports structured outputs and parallel tool calls. Note: Does not support reasoning or temperature parameters.',
+    displayName: 'GPT-5.2 Chat',
+    id: 'gpt-5.2-chat',
+    maxOutput: 16_384,
+    pricing: {
+      units: [
+        { name: 'textInput', rate: 1.25, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 10, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput_cacheRead', rate: 0.13, strategy: 'fixed', unit: 'millionTokens' },
+      ],
+    },
+    releasedAt: '2025-12-11',
+    type: 'chat',
+  },
+  {
+    abilities: {
+      functionCall: true,
+      reasoning: true,
+      structuredOutput: true,
+      vision: true,
+    },
+    config: {
+      deploymentName: 'gpt-5.1',
+    },
+    contextWindowTokens: 400_000,
+    description:
+      'GPT-5.1 is a GA model with enhanced reasoning capabilities. It supports text and image processing, structured outputs, and parallel tool calls, suitable for complex tasks requiring deep understanding and analysis.',
+    displayName: 'GPT-5.1',
+    enabled: true,
+    id: 'gpt-5.1',
+    maxOutput: 128_000,
+    pricing: {
+      units: [
+        { name: 'textInput', rate: 1.25, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 10, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput_cacheRead', rate: 0.13, strategy: 'fixed', unit: 'millionTokens' },
+      ],
+    },
+    releasedAt: '2025-11-13',
+    type: 'chat',
+  },
+  {
+    abilities: {
+      functionCall: true,
+      reasoning: true,
+      structuredOutput: true,
+      vision: true,
+    },
+    config: {
+      deploymentName: 'gpt-5.1-chat',
+    },
+    contextWindowTokens: 128_000,
+    description:
+      'GPT-5.1 Chat is a preview model with built-in reasoning optimized for conversational scenarios. It supports structured outputs and parallel tool calls. Note: Does not support temperature parameters.',
+    displayName: 'GPT-5.1 Chat',
+    id: 'gpt-5.1-chat',
+    maxOutput: 16_384,
+    pricing: {
+      units: [
+        { name: 'textInput', rate: 1.25, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 10, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput_cacheRead', rate: 0.13, strategy: 'fixed', unit: 'millionTokens' },
+      ],
+    },
+    releasedAt: '2025-11-13',
+    type: 'chat',
+  },
+  {
+    abilities: {
+      functionCall: true,
+      reasoning: true,
+      structuredOutput: true,
+      vision: true,
+    },
+    config: {
       deploymentName: 'gpt-5-pro',
     },
     contextWindowTokens: 400_000,
